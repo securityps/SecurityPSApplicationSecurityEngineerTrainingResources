@@ -23,6 +23,35 @@ Burp Suite is by far the best man-in-the-middle proxy tool. There are others out
 * https://support.portswigger.net/customer/portal/articles/1783075-installing-burp-s-ca-certificate-in-your-browser
 * https://support.portswigger.net/customer/portal/articles/2326039-the-burp-methodology
 
+#### How To Proxy an Application on Localhost (or 127.0.0.1) on Windows
+When you run an application locally and attempt to proxy traffic through Burp Suite on Windows, the browser bypasses the proxy and you can't see any of the requests or responses. This happens when you type in something like http://127.0.0.1/ or http://localhost/ in the location bar of a browser. One way to make sure you can see that traffic is to add a host entry, and then type that hostname in to the browser's address bar instead. To create a host entry, open notepad as an administrator by finding it in the start menu, right clicking, and selecting "Run as Administrator". Once Notepad is open, choose File -> Open and type in "c:\windows\system32\drivers\etc\hosts". Add the entry "127.0.0.1 application.local" to the bottom of the hosts file and save the file. An example of the updated host file is shown below.
+```
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+127.0.0.1 application.local
+```
+Now, when you visit a web application that you host locally, type in http://application.local instead of http://127.0.0.1. The traffic will now flow through the browser correctly as long as you have enabled the proxy in the browser using the help pages above.
+
+
 #### Tips for Using Burp Suite
 * Manually crawl the application to identify all the hostnames and URLs related to the application
 * Add the application URLs to the Target → Scope tab

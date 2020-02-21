@@ -27,6 +27,7 @@ While these are basic resources, they are also classic resources.
 * https://www.w3schools.com/css/default.asp
 * https://www.w3schools.com/js/default.asp
 * https://www.w3schools.com/sql/default.asp
+
 ### Getting Started with C#, ASP.NET, and ASP.NET MVC
 * https://dotnet.microsoft.com/learn/videos
   * C# 101
@@ -35,6 +36,7 @@ While these are basic resources, they are also classic resources.
   * Nuget 101
   * Intro to Visual Studio
   * Entity Framework Core 101
+
 ## Getting Started with Application Security Testing
 ### Web Application Hackers Handbook, 2nd Edition by Dafydd Stuttard and Marcus Pinto
 This resource is a little bit dated but still really good. We like it because it's comprehensive and practical. This should be supplemented with the next resource.
@@ -44,6 +46,7 @@ Free, hands on education and labs. This is effectively the "3rd Edition" of the 
 This resouce provides step by step guidance for finding different classes of vulnerabilities with Portswigger's Burp Suite tool (see the tools section below for more information).
 #### Related Resource
 * https://portswigger.net/burp/documentation/desktop/penetration-testing
+
 ### [OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project)
 The Open Web Application Security Project (OWASP) produces free resources to help developers learn about application security. The OWASP Testing Guide walks through a list of vulnerabilities and talks about how to test for those issues.
 

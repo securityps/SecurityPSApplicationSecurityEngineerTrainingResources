@@ -6,11 +6,44 @@ The foundation of a great application security engineer is his or her ability to
 
 After gaining a thorough understanding of the application, brainstorm potential threats that are particularly relevant due to its business purpose, design, and implementation. Use that context to then execute on test cases that realize those threats. Systematically work through every feature and page of the application, always stopping to think about new potential threats and test cases that must be exercised. Finally, use a list of vulnerabilities and best practices to test the entire application, but apply your knowledge of the application to consider which vulnerabilities apply and how they can be best tested. Go through the application systematically to test for those issues.
 
-## Top Resources
+## Staring With Software Development
+If you haven't written many web applications, these resources will get you started on your journey. Before trying to learn hacking, build lots of web applications. Build traditional web applications and single page applications. Build applications that use a REST API and applications that have an MVC architecture. Build Android applications or iOS applications. Add Authentication, user roles, authorization controls, multi-step processes, functionality that accepts a file upload and and process the file, and more. Write lots and lots of code. If you understand how applications are built, you will be tremendously better at finding vulnerabilities later.
+
+After you build an application, proxy the traffic with Burp Suite Community Edition (see below). Ask yourself questions like:
+* How does HTTP work?
+* When I log in, how does it keep track of who I am?
+* What headers am I seeing?
+* What cookies does it use?
+* What are the cookies for?
+* What happens if I change or take away a header or cookie in Burp Suite?
+* What parameters are sent either in the URL or POST body?
+* What happens if I change those parameters to point at different database IDs or put in invalid characters?
+
+Investigate how the application works from the perspective of the proxy? Alter the HTTP request in ways that you can't in the browser and see what happens. Look at the HTTP response and see what comes back from the server that maybe you didn't realize was there. Get comfortable using a proxy and looking at HTTP requests and responses.
+
+### Getting Started with HTMl, CSS, JavaScript, and SQL
+While these are basic resources, they are also classic resources.
+* https://www.w3schools.com/html/default.asp
+* https://www.w3schools.com/css/default.asp
+* https://www.w3schools.com/js/default.asp
+* https://www.w3schools.com/sql/default.asp
+### Getting Started with C#, ASP.NET, and ASP.NET MVC
+* https://dotnet.microsoft.com/learn/videos
+ * C# 101
+ * .NET Core 101
+ * ASP.NET Core 101
+ * Nuget 101
+ * Intro to Visual Studio
+ * Entity Framework Core 101
+## Getting Started with Application Security Testing
 ### Web Application Hackers Handbook, 2nd Edition by Dafydd Stuttard and Marcus Pinto
 This resource is a little bit dated but still really good. We like it because it's comprehensive and practical. This should be supplemented with the next resource.
 ### [Web Security Academy](https://portswigger.net/web-security)
 Free, hands on education and labs. This is effectively the "3rd Edition" of the Web Application Hackers Handbook. Portswigger plans to add more and more exercises over time.
+### [The Burp Methodology](https://portswigger.net/support/the-burp-methodology)
+This resouce provides step by step guidance for finding different classes of vulnerabilities with Portswigger's Burp Suite tool (see the tools section below for more information).
+#### Related Resource
+* https://portswigger.net/burp/documentation/desktop/penetration-testing
 ### [OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project)
 The Open Web Application Security Project (OWASP) produces free resources to help developers learn about application security. The OWASP Testing Guide walks through a list of vulnerabilities and talks about how to test for those issues.
 
@@ -51,7 +84,6 @@ When you run an application locally and attempt to proxy traffic through Burp Su
 ```
 Now, when you visit a web application that you host locally, type in http://application.local instead of http://127.0.0.1. The traffic will now flow through the browser correctly as long as you have enabled the proxy in the browser using the help pages above.
 
-
 #### Tips for Using Burp Suite
 * Manually crawl the application to identify all the hostnames and URLs related to the application
 * Add the application URLs to the Target → Scope tab
@@ -72,4 +104,3 @@ Many of these plugins can be installed using the BApp Store within Burp Suite.
 * HTML5 Auditor
 * Backslash Powered Scanner
 * Collaborator Everywhere
-

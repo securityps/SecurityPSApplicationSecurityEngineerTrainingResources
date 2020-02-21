@@ -21,7 +21,7 @@ After you build an application, proxy the traffic with Burp Suite Community Edit
 
 Investigate how the application works from the perspective of the proxy? Alter the HTTP request in ways that you can't in the browser and see what happens. Look at the HTTP response and see what comes back from the server that maybe you didn't realize was there. Get comfortable using a proxy and looking at HTTP requests and responses.
 
-### Getting Started with HTMl, CSS, JavaScript, and SQL
+### Getting Started with HTML, CSS, JavaScript, and SQL
 While these are basic resources, they are also classic resources.
 * https://www.w3schools.com/html/default.asp
 * https://www.w3schools.com/css/default.asp

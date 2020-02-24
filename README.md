@@ -6,7 +6,7 @@ The foundation of a great application security engineer is his or her ability to
 
 After gaining a thorough understanding of the application, brainstorm potential threats that are particularly relevant due to its business purpose, design, and implementation. Use that context to then execute on test cases that realize those threats. Systematically work through every feature and page of the application, always stopping to think about new potential threats and test cases that must be exercised. Finally, use a list of vulnerabilities and best practices to test the entire application, but apply your knowledge of the application to consider which vulnerabilities apply and how they can be best tested. Go through the application systematically to test for those issues.
 
-## Staring With Software Development
+## Starting With Software Development
 If you haven't written many web applications, these resources will get you started on your journey. Before trying to learn hacking, build lots of web applications. Build traditional web applications and single page applications. Build applications that use a REST API and applications that have an MVC architecture. Build Android applications or iOS applications. Add authentication, user roles, authorization controls, multi-step processes, functionality that accepts a file upload and and process the file, and more. Write lots and lots of code. If you understand how applications are built, you will be tremendously better at finding vulnerabilities later.
 
 After you build an application, proxy the traffic with Burp Suite Community Edition (see below). Ask yourself questions like:

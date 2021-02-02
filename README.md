@@ -19,7 +19,7 @@ After you build an application, proxy the traffic with Burp Suite Community Edit
 * What parameters are sent either in the URL or POST body?
 * What happens if I change those parameters to point at different database IDs or put in invalid characters?
 
-Investigate how the application works from the perspective of the proxy? Alter the HTTP request in ways that you can't in the browser and see what happens. Look at the HTTP response and see what comes back from the server that maybe you didn't realize was there. Get comfortable using a proxy and looking at HTTP requests and responses.
+Investigate how the application works from the perspective of the proxy. Alter the HTTP request in ways that you can't in the browser and see what happens. Look at the HTTP response and see what comes back from the server that maybe you didn't realize was there. Get comfortable using a proxy and looking at HTTP requests and responses.
 
 ### Getting Started with HTML, CSS, JavaScript, and SQL
 While these are basic resources, they are also classic resources.

@@ -7,7 +7,7 @@ The foundation of a great application security engineer is his or her ability to
 After gaining a thorough understanding of the application, brainstorm potential threats that are particularly relevant due to its business purpose, design, and implementation. Use that context to then execute on test cases that realize those threats. Systematically work through every feature and page of the application, always stopping to think about new potential threats and test cases that must be exercised. Finally, use a list of vulnerabilities and best practices to test the entire application, but apply your knowledge of the application to consider which vulnerabilities apply and how they can be best tested. Go through the application systematically to test for those issues.
 
 ## Starting with Software Development
-If you haven't written many web applications, these resources will get you started on your journey. Before trying to learn hacking, build lots of web applications. Build traditional web applications and single page applications. Build applications that use a REST API and applications that have an MVC architecture. Build Android applications or iOS applications. Add authentication, user roles, authorization controls, multi-step processes, functionality that accepts a file upload and and process the file, and more. Write lots and lots of code. If you understand how applications are built, you will be tremendously better at finding vulnerabilities later.
+Before trying to learn hacking, build lots of web applications. Build traditional web applications and single page applications. Build applications that use a REST API and applications that have an MVC architecture. Build Android applications or iOS applications. Add authentication, user roles, authorization controls, multi-step processes, functionality that accepts a file upload and and process the file, and more. Write lots and lots of code. If you understand how applications are built, you will be tremendously better at finding vulnerabilities later.
 
 After you build an application, proxy the traffic with Burp Suite Community Edition (see below). Ask yourself questions like:
 * How does HTTP work?
@@ -21,21 +21,9 @@ After you build an application, proxy the traffic with Burp Suite Community Edit
 
 Investigate how the application works from the perspective of the proxy. Alter the HTTP request in ways that you can't in the browser and see what happens. Look at the HTTP response and see what comes back from the server that maybe you didn't realize was there. Get comfortable using a proxy and looking at HTTP requests and responses.
 
-### Getting Started with HTML, CSS, JavaScript, and SQL
-While these are basic resources, they are also classic resources.
-* https://www.w3schools.com/html/default.asp
-* https://www.w3schools.com/css/default.asp
-* https://www.w3schools.com/js/default.asp
-* https://www.w3schools.com/sql/default.asp
+### Learning Web Development Resources
+Security PS has created a separate page containing resources that you can self-study to learn software development. Check Out [Our Preapprentice Learning Resources](https://github.com/securityps/PreapprenticeLearningResources).
 
-### Getting Started with C#, ASP.NET, and ASP.NET MVC
-* https://dotnet.microsoft.com/learn/videos
-  * C# 101
-  * .NET Core 101
-  * ASP.NET Core 101
-  * Nuget 101
-  * Intro to Visual Studio
-  * Entity Framework Core 101
 
 ## Getting Started with Application Security Testing
 ### Web Application Hackers Handbook, 2nd Edition by Dafydd Stuttard and Marcus Pinto
